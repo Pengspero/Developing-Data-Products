@@ -1,0 +1,47 @@
+---
+title: "Course Assignment for Week 2"
+author: "Pengfei LI"
+date: "7/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **Project Overview** 
+
+Based on the requirement in the course project instruction, the assignment instruction contains a requirement for creating a web page through R Markdown with a map inside. The map should be created by package Leaflet.
+
+The webpage should be hosted on Github Pages, RPubs, or NeoCities. The review criteria is as follows,
+
+1. Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
+
+2. Does the web page feature an interactive map that appears to have been created with Leaflet?
+
+
+# **Introduction** 
+
+This report presents a map of the southern part of China. The education level of this area is relatively high and there are many famous university located in this area. This report will presents the location, name and the rank of ten university in this area.
+
+
+# **The Location Presentation**
+
+In this section, I use the R package _leaflet_ to insert a  map with 10 high rating universities inside. The information of these universities contains the detailed names and ranks. The R code is as follows.
+
+```{r, echo=TRUE}
+# Load the package
+library(leaflet)
+library(dplyr)
+library(readxl)
+# Load and process the data
+location<-read_xlsx("University data.xlsx")
+location %>% leaflet() %>%
+        addTiles() %>%
+        addMarkers(
+                lat = location$Latitude, 
+                lng = location$Longitude, 
+                popup = paste(location$Location, "<br>", "Rank:", location$Rank),
+                clusterOptions = markerClusterOptions())
+```
+
