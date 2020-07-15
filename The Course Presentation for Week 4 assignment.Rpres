@@ -1,0 +1,50 @@
+The Course Presentation for Week 4 assignment
+========================================================
+author: Pengfei LI
+date: Wednesday, 15 July, 2020
+autosize: true
+
+Assignment Introduction
+========================================================
+
+### **The Shiny Application**
+* Write a shiny application with associated supporting documentation;
+* Deploy the application on Rstudio's shiny server;
+* Share the application link by pasting it into the provided text box;
+* Share your server.R and ui.R code on github;
+
+### **Your Reproducible Pitch Presentation**
+* 5 slides to pitch our idea done in Slidify or Rstudio Presenter;
+* Your presentation pushed to github or Rpubs;
+* A link to your github or Rpubs presentation pasted into the provided text box;
+
+
+Data Pre-processing Procedure
+========================================================
+In this section, only the short data summary will be presented due to the complicated.
+```{r}
+price_index <- read.csv("price_index.csv")
+str(price_index)
+```
+
+Application
+========================================================
+The application in this project is also on the shiyapps website. The URL is as follows.
+
+The application UI separate into two sections.
+
+Left pane:
+
+1. Select the area for the stock indices from North America, Europe and China;
+2. Selcet the time horizon for data output in the right pane
+
+Right pane:
+
+1. Summary: This area presents the summary statistics for the select stock indices.
+2. Structure: Here shows the data structure of the whole dataframe.
+3. Data: The display for the data frame
+4. Plot: the plot for dataframe
+
+
+Application
+========================================================

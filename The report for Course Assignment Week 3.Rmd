@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# **Project Instruction
+# **Project Instruction**
 
 This assignment requires a web page presentation with a plot created with Plotly. The outcome report should be hosted on either Github Pages, RPubs, or NeoCities. The page should contain the data used to created the document and also a plot. Moreover, the report should fit the following review criteria:
 
@@ -26,7 +26,7 @@ There are two main stock market indices in USA, the Dow Jones Industrial Average
 The data is downloaded from the Thomas Routers Datastream database. The time horizon of these two datasets are 02/01/2006 to 07/01/2020, while the time frequency is daily. In the following section, a plot of indices price will be provided for the presentation of the indices trends.
 
 
-# **Plot Processing
+## **Plot Processing**
 
 In this section, I shall present the plot processing procedure. 
 
