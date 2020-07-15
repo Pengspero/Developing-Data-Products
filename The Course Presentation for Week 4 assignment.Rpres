@@ -21,7 +21,7 @@ Assignment Introduction
 
 Data Pre-processing Procedure
 ========================================================
-In this section, only the short data summary will be presented due to the complicated.
+In this section, only the short data summary will be presented due to the complicated. All the data in this project is from Thomsom Reuters Datastream. 
 ```{r}
 price_index <- read.csv("price_index.csv")
 str(price_index)
@@ -30,6 +30,7 @@ str(price_index)
 Application
 ========================================================
 The application in this project is also on the shiyapps website. The URL is as follows.
+<https://skyspero.shinyapps.io/Stock_indices/>
 
 The application UI separate into two sections.
 
@@ -46,5 +47,10 @@ Right pane:
 4. Plot: the plot for dataframe
 
 
-Application
+Github repo
 ========================================================
+The file are also are available in the Github repository. The link is:
+https://github.com/Pengspero/Developing-Data-Products
+
+In the repo, the downloaded data files of all the involved stock indices are presented in xlsx format. There is also a R markdown format report to give the description about this project. "Week 4.R" is an local file with all the data pre-processing code inside.
+
